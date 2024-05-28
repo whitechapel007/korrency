@@ -7,10 +7,10 @@ import Button from "./Button";
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="shadow-md top-0 left-0 relative bg-primary md:bg-white h-screen md:h-20 ">
-      <div className="grid grid-cols-3 items-center  p-6 md:max-w-[1400px] mx-auto">
+    <div className="shadow-md top-0 left-0 relative bg-primary md:bg-white h-screen md:h-20 mx-auto">
+      <div className="flex justify-between md:grid grid-cols-3 items-center  p-6 md:max-w-[1900px] mx-auto ">
         <img src={secondLogo} alt="" className="md:hidden" />
-        <img src={logo} alt="" className="md:block" />
+        <img src={logo} alt="" className="hidden md:block" />
 
         <div
           className="block md:hidden cursor-pointer"
@@ -18,13 +18,13 @@ function Header() {
         >
           <img src={menu} alt="" />
         </div>
-        <div className="flex gap-4 text-white  md:text-primary">
+        <div className="gap-6 hidden md:flex text-white   justify-center text-xl font-normal leading-5 md:text-heading-text">
           <ul>Company</ul>
           <ul>Resources</ul>
           <ul>Support</ul>
         </div>
 
-        <div className="flex items-center">
+        <div className="items-center w-[80%] hidden md:flex">
           <DropDown />
 
           <Button variant="primary" size="md">

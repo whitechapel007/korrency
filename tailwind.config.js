@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#0F3380",
+        "heading-text": "#222222",
       },
       fontFamily: {
         "gilroy-black": ["Gilroy-Black", "sans-serif"],
