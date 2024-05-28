@@ -1,19 +1,30 @@
-// import logo from "../assets/Logo_Email_Signature.svg";
+import logo from "../assets/pictures/Logo_Email_Signature.svg";
 import menu from "../assets/pictures/menu-04.svg";
 import secondLogo from "../assets/pictures/Korrency-white-version_Test_Landing 1.svg";
 import { useState } from "react";
+import DropDown from "./DropDown";
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="shadow-md top-0 left-0 relative bg-primary h-screen">
-      <div className="flex items-center justify-between p-6 ">
-        <img src={secondLogo} alt="" />
+    <div className="shadow-md top-0 left-0 relative bg-primary md:bg-white h-screen md:h-20">
+      <div className="grid grid-cols-3 items-center  p-6 ">
+        <img src={secondLogo} alt="" className="md:hidden" />
+        <img src={logo} alt="" className="md:block" />
 
         <div
           className="block md:hidden cursor-pointer"
           onClick={() => setOpenMenu(!openMenu)}
         >
           <img src={menu} alt="" />
+        </div>
+        <div className="flex gap-4 text-white  md:text-primary">
+          <ul>Company</ul>
+          <ul>Resources</ul>
+          <ul>Support</ul>
+        </div>
+
+        <div>
+          <DropDown />
         </div>
       </div>
       <div
