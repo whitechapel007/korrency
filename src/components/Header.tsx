@@ -17,8 +17,8 @@ function Header() {
         </div>
       </div>
       <div
-        className={`bg-white p-3 absolute w-[90%] left-[35px] rounded-tl-[20px] rounded-tr-none  rounded-b-[20px] flex flex-col gap-11 px-6 py-12 text-primary text-base font-bold leading-8 font-gilroy-bold transition-all duration-1000 ease-in ${
-          openMenu ? "top-[-200px] h-0" : "top-auto"
+        className={`bg-white p-3 absolute w-[90%] left-[35px] rounded-tl-[20px] rounded-tr-none  rounded-b-[20px] flex flex-col gap-11 px-6 py-12 text-primary text-base font-bold leading-8 font-gilroy-bold transition-all duration-500 ease-in ${
+          openMenu ? "top-20 opacity-100" : "top-[-450px] opacity-0"
         }`}
       >
         <ul>Company</ul>
