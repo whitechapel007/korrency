@@ -3,11 +3,12 @@ import menu from "../assets/pictures/menu-04.svg";
 import secondLogo from "../assets/pictures/Korrency-white-version_Test_Landing 1.svg";
 import { useState } from "react";
 import DropDown from "./DropDown";
+import Button from "./Button";
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="shadow-md top-0 left-0 relative bg-primary md:bg-white h-screen md:h-20">
-      <div className="grid grid-cols-3 items-center  p-6 ">
+    <div className="shadow-md top-0 left-0 relative bg-primary md:bg-white h-screen md:h-20 ">
+      <div className="grid grid-cols-3 items-center  p-6 md:max-w-[1400px] mx-auto">
         <img src={secondLogo} alt="" className="md:hidden" />
         <img src={logo} alt="" className="md:block" />
 
@@ -23,8 +24,12 @@ function Header() {
           <ul>Support</ul>
         </div>
 
-        <div>
+        <div className="flex items-center">
           <DropDown />
+
+          <Button variant="primary" size="md">
+            Get the app
+          </Button>
         </div>
       </div>
       <div

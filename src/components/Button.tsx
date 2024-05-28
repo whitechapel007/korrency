@@ -36,10 +36,10 @@ function Button({
 const buttonVariants = cva("rounded-md shadow-sm font-semibold", {
   variants: {
     variant: {
-      primary: "border-black  px-2 py-1",
+      primary: "bg-primary text-white  font-gilroy-regular",
       secondary: "",
     },
-    size: { sm: "py-2 text-sm py-0", md: "", lg: "" },
+    size: { sm: "py-2 text-sm px-1", md: "py-3 px-2 text-md", lg: "" },
   },
   defaultVariants: { variant: "primary", size: "md" },
 });
