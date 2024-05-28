@@ -6,6 +6,12 @@ export default {
       colors: {
         primary: "#0F3380",
       },
+      fontFamily: {
+        "gilroy-black": ["Gilroy-Black", "sans-serif"],
+        "gilroy-regular": ["Gilroy-Regular", "sans-serif"],
+        "gilroy-medium": ["Gilroy-Medium", "sans-serif"],
+        "gilroy-bold": ["Gilroy-Bold", "sans-serif"],
+      },
     },
   },
   plugins: [],

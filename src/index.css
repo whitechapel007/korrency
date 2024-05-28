@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("../src/assets/gilroy/Gilroy-Black.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../src/assets/gilroy/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../src/assets/gilroy/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../src/assets/gilroy/Gilroy-Bold.ttf");
+}
